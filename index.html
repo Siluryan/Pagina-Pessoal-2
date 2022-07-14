@@ -4,48 +4,44 @@
 	<meta charset="utf-8">	
 	<meta property='og:image' content='https://siluryan.github.io/Pagina-Pessoal/assets/imgs/JsoyQF.jpg'/>
 	<meta property='og:description' content='Guilherme Dias | Suporte em TI'/>
-	<meta property='og:url' content='https://siluryan.github.io/Pagina-Pessoal'/>	
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="author" content="Guilherme Dias">     
-	
-    <style type="text/css">
-        </style>
-    <title>Guilherme Dias | Suporte em TI</title>
+	<meta property='og:url' content='https://siluryan.github.io/Pagina-Pessoal'/>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="author" content="Guilherme Dias">  
 
-    <!-- font icons -->
-    <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
-    
-    <!-- owl carousel -->
-    <link rel="stylesheet" href="assets/vendors/owl-carousel/css/owl.carousel.css">
-    <link rel="stylesheet" href="assets/vendors/owl-carousel/css/owl.theme.default.css">
+	<title>Guilherme Dias | Suporte em TI</title>
 
-    <!-- Bootstrap + Siluryan main styles -->
+	<!-- font icons -->
+	<link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
+
+	<!-- owl carousel -->
+	<link rel="stylesheet" href="assets/vendors/owl-carousel/css/owl.carousel.css">
+	<link rel="stylesheet" href="assets/vendors/owl-carousel/css/owl.theme.default.css">
+
+	<!-- Bootstrap + Siluryan main styles -->
 	<link rel="stylesheet" href="assets/css/siluryan.css">
 
-    <!-- Favicon -->
-    <link rel="apple-touch-icon" sizes="57x57" href="assets/imgs/favicon/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="assets/imgs/favicon/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="assets/imgs/favicon/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="assets/imgs/favicon/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="assets/imgs/favicon/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="assets/imgs/favicon/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="assets/imgs/favicon/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="assets/imgs/favicon/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/imgs/favicon/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192"  href="assets/imgs/favicon/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/imgs/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="assets/imgs/favicon/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/imgs/favicon/favicon-16x16.png">
-    <link rel="manifest" href="manifest.json">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="ms-icon-144x144.png">
-    <meta name="theme-color" content="#ffffff">
+	<!-- Favicon -->
+	<link rel="apple-touch-icon" sizes="57x57" href="assets/imgs/favicon/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="assets/imgs/favicon/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="assets/imgs/favicon/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="assets/imgs/favicon/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="assets/imgs/favicon/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="assets/imgs/favicon/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="assets/imgs/favicon/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="assets/imgs/favicon/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="assets/imgs/favicon/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192"  href="assets/imgs/favicon/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="assets/imgs/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="assets/imgs/favicon/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="assets/imgs/favicon/favicon-16x16.png">
+	<link rel="manifest" href="manifest.json">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="ms-icon-144x144.png">
+	<meta name="theme-color" content="#ffffff">
     
-    <!-- script src -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.20.0-202088235442/firebase.js"></script>
-    <script src="https://www.google.com/recaptcha/api.js?render=SITE KEY RECAPTCHA"></script>  
-    
-    
+	<!-- script src -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.20.0-202088235442/firebase.js"></script>
+	<script src="https://www.google.com/recaptcha/api.js?render=SITE KEY RECAPTCHA"></script>   
 </head>
 
 <?php
@@ -57,8 +53,7 @@ if(isset($_POST['submit'])){
     $request = file_get_contents($url.'?secret='.$secret.'&response='.$response);
     $response = json_decode($request);
 ?>
-
-
+	
 <body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
 
     <nav id="scrollspy" class="navbar navbar-light bg-light navbar-expand-lg fixed-top" data-spy="affix" data-offset-top="20">
@@ -132,26 +127,21 @@ if(isset($_POST['submit'])){
             <div class="socials text-right">
                 <div class="row justify-content-between">
                     <div class="col">
-                        <a class="d-block subtitle"><i class="ti-microphone pr-2"></i> (14) 99692-1397</a>
-                        
-                    </div>
-                    
-                    </div>
+                        <a class="d-block subtitle"><i class="ti-microphone pr-2"></i> (14) 99692-1397</a>                        
+                    </div>                    
                 </div>
             </div>
-        </div>
+       </div>    
         
     </header>
     
     <section class="section" id="about">
 
         <div class="container">
-
             <div class="row align-items-center mr-auto">
                 <div class="col-md-4">
                     <h3 class="section-title">Sobre Mim</h3>
                     <p>Tive contato com a Computação ainda cedo, mas passei por diversas experiências e lugares que me permitiram escolher esse caminho com maior confiança</p>
-
                     
                 </div>
                 <div class="col-sm-6 col-md-4 ml-auto">
@@ -197,9 +187,7 @@ if(isset($_POST['submit'])){
                             <p>Linux representa tudo aquilo que gostaria de ver em outras áreas,
                                 e dedico uma boa tarde do meu dia no aprofundamento dessa incrível tecnologia
                             </p>
-                        </div>
-                        
-                    
+                        </div>                
                     </div>
                 </div>
              </div>
