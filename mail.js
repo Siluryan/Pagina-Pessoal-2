@@ -1,12 +1,12 @@
 const firebaseConfig = {
-    apiKey: "AIzaSyAy9HqfdfB4GI4g3y3FpEMl4BVR5vwGSmk",
-    authDomain: "guilhermediasti.firebaseapp.com",
-    databaseURL: "https://guilhermediasti-default-rtdb.firebaseio.com",
-    projectId: "guilhermediasti",
-    storageBucket: "guilhermediasti.appspot.com",
-    messagingSenderId: "927090867966",
-    appId: "1:927090867966:web:1e171f121b1ae6d9a6efaf",
-    measurementId: "G-CEXW7J1PLX"
+    apiKey: "",
+    authDomain: "",
+    databaseURL: "",
+    projectId: "",
+    storageBucket: "",
+    messagingSenderId: "",
+    appId: "",
+    measurementId: ""
   };
 
   firebase.initializeApp(firebaseConfig);
