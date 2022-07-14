@@ -1,14 +1,12 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 <head>
-	<meta charset="utf-8">
-	
+	<meta charset="utf-8">	
 	<meta property='og:image' content='https://siluryan.github.io/Pagina-Pessoal/assets/imgs/JsoyQF.jpg'/>
 	<meta property='og:description' content='Guilherme Dias | Suporte em TI'/>
-	<meta property='og:url' content='https://siluryan.github.io/Pagina-Pessoal'/>
-	
+	<meta property='og:url' content='https://siluryan.github.io/Pagina-Pessoal'/>	
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="author" content="Guilherme Dias">		
+    <meta name="author" content="Guilherme Dias">     
 	
     <style type="text/css">
         </style>
@@ -42,8 +40,25 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
-
+    
+    <!-- script src -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.20.0-202088235442/firebase.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js?render=SITE KEY RECAPTCHA"></script>  
+    
+    
 </head>
+
+<?php
+if(isset($_POST['submit'])){
+    $url = https://www.google.com/recaptcha/api/siteverify;
+    $secret = 'SECRET KEY RECAPTCHA';
+    $response = $_POST['token_generate'];
+    $remoteip = $_SERVER['REMOTE_ADDR'];
+    $request = file_get_contents($url.'?secret='.$secret.'&response='.$response);
+    $response = json_decode($request);
+?>
+
+
 <body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
 
     <nav id="scrollspy" class="navbar navbar-light bg-light navbar-expand-lg fixed-top" data-spy="affix" data-offset-top="20">
@@ -78,7 +93,7 @@
             </div>
         </div>
     </nav>
-
+    
 
     <header id="home" class="header">
         <div class="overlay"></div>
@@ -88,50 +103,46 @@
                 <div class="carousel-inner">
                     <div class="carousel-item active">
                         <div class="carousel-caption d-none d-md-block">
-                            <h1 class="carousel-title">TI<br> Soluções em Nuvem</h1>
+                            <h1 class="carousel-title"><br> Soluções em Nuvem</h1>
                             
                         </div>
                     </div>
                     <div class="carousel-item">
                         <div class="carousel-caption d-none d-md-block">
-                            <h1 class="carousel-title">TI <br>Segurança da Informação</h1>
+                            <h1 class="carousel-title"><br>Segurança da Informação</h1>
                             
                           </div>
                     </div>
                     <div class="carousel-item">
                         <div class="carousel-caption d-none d-md-block">
-                            <h1 class="carousel-title">TI <br> Python e DevOps</h1>
-                           
-                          </div>
+                            <h1 class="carousel-title"><br> Python e DevOps</h1>
+                        </div>
                     </div>
                 </div>
             </div>        
         </div>
 
+       
         <div class="infos container mb-4 mb-md-2">
             <div class="title">
-                <h6 class="subtitle font-weight-normal">O que acredito</h6><br>
-                <h5>Agilidade e Segurança</h5>
-                <p class="font-small">A agilidade dos negócios só tem a ganhar priorizando o bem-estar das pessoas e a segurança de suas informações</p>
+                <h6 style="color: rgb(241, 241, 241);">O que acredito</h6><br>                
+                <p style="color: rgb(241, 241, 241);">A agilidade dos negócios só tem a ganhar priorizando o bem-estar das pessoas e a segurança de suas informações</p>
             </div>
+            
             <div class="socials text-right">
                 <div class="row justify-content-between">
                     <div class="col">
                         <a class="d-block subtitle"><i class="ti-microphone pr-2"></i> (14) 99692-1397</a>
-                        <a class="d-block subtitle"><i class="ti-email pr-2"></i> guilhermerrdias@gmail.com</a>
+                        
                     </div>
-                    <div class="col">
-                        <h6 class="subtitle font-weight-normal mb-2">Redes Sociais</h6>
-                        <div class="social-links">
-                            <a href="https://www.facebook.com/guilhermeslrdias/" class="link pr-1"><i class="ti-facebook"></i></a>
-                            
-                        </div>
+                    
                     </div>
                 </div>
             </div>
         </div>
+        
     </header>
-
+    
     <section class="section" id="about">
 
         <div class="container">
@@ -184,9 +195,11 @@
                         <div class="infos-wrapper">
                             <h4 class="text-primary">Linux</h4>
                             <p>Linux representa tudo aquilo que gostaria de ver em outras áreas,
-                                e dedico uma boa tarde do meu dia no aprofundamento dessa incrível tecnologia!
+                                e dedico uma boa tarde do meu dia no aprofundamento dessa incrível tecnologia
                             </p>
                         </div>
+                        
+                    
                     </div>
                 </div>
              </div>
@@ -199,17 +212,19 @@
             <h3 class="section-title mb-4">Certificações</h3>
 
             <div class="row text-center">
+
                 <div class="col-lg-4">
-                    <a href="javascript:void(0)" class="card border-0 text-dark">
-                        <img class="card-img-top" src="assets/imgs/oracle.jpg" alt="Oracle Cloud Infrastructure Security">
+                    <a href="https://www.credly.com/badges/e8964d10-c102-4bd7-8dd3-0f3f113ab57b/linked_in?t=re77ie" target="_blank" class="card border-0 text-dark">
+                        <img class="card-img-top" src="assets/imgs/azure.jpg" alt="Microsoft Azure - Fundamentals">
                         <span class="card-body">
-                            <h4 class="title mt-4">Oracle Cloud Infrastructure - Security</h4>
-                            <p class="xs-font">Associate</p>
+                            <h4 class="title mt-4">Microsoft Azure AZ-900</h4>
+                            <p class="xs-font">Fundamentals</p>
                         </span>
                     </a>
-                </div>
+                </div>            
+                
                 <div class="col-lg-4">
-                    <a href="javascript:void(0)" class="card border-0 text-dark">
+                    <a href="https://www.credly.com/badges/f4ae5954-b0ee-48b4-ac94-8577179764e3/linked_in?t=rdp2ua" target="_blank" class="card border-0 text-dark">
                         <img class="card-img-top" src="assets/imgs/cisco.jpg" alt="CyberOps Cisco Networking Academy">
                         <span class="card-body">
                             <h4 class="title mt-4">CCNAv7 e CyberOps</h4>
@@ -217,68 +232,47 @@
                         </span>
                     </a>
                 </div>
+                
                 <div class="col-lg-4">
-                    <a href="javascript:void(0)" class="card border-0 text-dark">
-                        <img class="card-img-top" src="assets/imgs/hackerrank.jpg" alt="Python Hackerrank">
+                    <a href="https://catalog-education.oracle.com/pls/certview/sharebadge?id=BF69017652E97A0E49EE2FE4B5222ABA72A307D7CC54A9F3A140A27ACC54452E" target="_blank" class="card border-0 text-dark">
+                        <img class="card-img-top" src="assets/imgs/oracle2.jpg" alt="Oracle Cloud Security">
                         <span class="card-body">
-                            <h4 class="title mt-4">Gold Badge</h4>
-                            <p class="xs-font">Implementação de Algorítmos</p>
+                            <h4 class="title mt-4">Oracle Cloud Infrastructure</h4>
+                            <p class="xs-font">Security</p>
                         </span>
                     </a>
                 </div>
-            </div>
-        </div>
     </section>
-
-   
-
-    <section class="section" id="portfolio">
-        <div class="container">
-            
+ 
+    <section class="section" id="portfolio">        
+        
+        <div class="container">        
              <h3 class="section-title pb-4">Portfólio</h3>
         </div>
 
-        <div id="owl-portfolio" class="owl-carousel owl-theme mt-4" >
+        <div id="owl-portfolio" class="owl-carousel owl-theme mt-4">          
             <a href="javascript:void(0)" class="item expertises-item">
-                <img src="assets/imgs/github.jpg"alt="Github" class="box-shadow">
-                <h6 class="mt-3 mb-2"><a href="https://github.com/Siluryan" ><p>GitHub é uma plataforma de hospedagem de código-fonte
+            <img src="assets/imgs/github.jpg"alt="Github" class="box-shadow"><p><h6 style="color: rgb(182, 180, 180);" class="font-semismall">* arraste para o lado caso esteja usando um smartphone</h6></p>
+            <h6 class="mt-3 mb-2 font-small"><a href="https://github.com/Siluryan" target="_blank"><p>GitHub é uma plataforma de hospedagem de código-fonte
                     com controle de versão usando o Git. 
-                    Ele permite que programadores contribuam em projetos privados
-                    e/ou Open Source de qualquer lugar do mundo</p>Confira meus projetos clicando aqui</a></h6>
-                
-            </a> 
-           
+                    Ele permite que programadores contribuam em projetos de qualquer lugar do mundo</p>Confira meus projetos clicando aqui</a></h6>                
+            </a>
+   
         </div>
-    </section>
-
-
-    
+              
+    </section>    
 
     <section class="section bg-overlay">
-
         <div class="container">
-            <div class="infos mb-4 mb-md-2">
-            <div class="title">
-                
-                <h5>Augusto Cury</h5><br>
-                <p class="font-small">“Ser um empreendedor é executar os sonhos, mesmo que haja riscos. É enfrentar os problemas, mesmo não tendo forças. É caminhar por lugares desconhecidos, mesmo sem bússola. É tomar atitudes que ninguém tomou. É ter consciência de que quem vence sem obstáculos triunfa sem glória.”</p>
-            </div>
-            <div class="socials">
-                <div class="row justify-content-between">
-                    <div class="col">
-                        <a class="d-block subtitle"><i class="ti-microphone"></i> (14) 99692-1397</a>
-                        <a class="d-block subtitle"><i class="ti-email"></i>guilhermerrdias@gmail.com</a>
-                    </div>
-                    
-                    </div>
-                </div>
-            </div>
-        </div> 
-        </div>
+            <p style="color:rgb(241, 241, 241)">“Ser um empreendedor é executar os sonhos, mesmo que haja riscos. É enfrentar os problemas, mesmo não tendo forças. É caminhar por lugares desconhecidos, mesmo sem bússola. É tomar atitudes que ninguém tomou. É ter consciência de que quem vence sem obstáculos triunfa sem glória."</p>
+        </div>    
+          
+        <div class="title">  
+            <h6 class="font-semismall">Augusto Cury</h6>
+        </div>    
     </section>
 
     <section class="section" id="blog">
-
         <div class="container mb-3">
             <h6 class="xs-font mb-0">Cantinho da Criatividade</h6>
             <h3 class="section-title mb-5">Blog Pessoal</h3>
@@ -293,10 +287,7 @@
                     <p>Nesse blog estão alguns contos e ensaios que escrevi ao longo da minha vida. Através deles você vai conhecer um pouco mais da minha trajetória de uma maneira leve
                         e artística
                     </p>
-
-                    <a href="https://www.facebook.com/guilhermedias42" class="badge badge-info">Clique aqui</a>
-
-                  
+                    <a href="https://www.facebook.com/guilhermedias42" class="badge badge-info">Acesse aqui</a>                  
                 </div>
             </div>
         </div>
@@ -326,10 +317,13 @@
                             <textarea name="" id="message" cols="30" rows="5" class="form-control" id="message" placeholder="Sua Mensagem"></textarea>
                         </div>
                         <div class="form-group">
-                            <input type="submit" class="btn btn-primary btn-block" value="Enviar Mensagem">
+                            <input type="hidden" name="token_generate" id="token_generate">
+                            <input type="submit" class="btn btn-primary btn-block" id="g-recaptcha-response" name="g-recaptcha-response" value="Enviar Mensagem">       
+                            
                         </div>
                     </form>
                 </div>
+                
                 <div class="col-md-4 d-none d-md-block order-1">
                     <ul class="list">
                         <li class="list-head">
@@ -344,6 +338,7 @@
                         </li>
                     </ul> 
                 </div>
+                
             </div>
 
             <footer class="footer mt-5 border-top">
@@ -375,11 +370,25 @@
     <!-- Owl carousel  -->
     <script src="assets/vendors/owl-carousel/js/owl.carousel.js"></script>
 
+    <script type="text/javascript" src="assets/js/Siluryan.js"></script>
+    
+    <script type="text/javascript" src="mail.js"></script>
 
-    <!-- Siluryan js -->
-    <script src="assets/js/Siluryan.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.20.0-202088235442/firebase.js"></script>
-    <script src="./mail.js"></script>
+    <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
 
+          
+        
 </body>
 </html>
+<script>
+    function onClick(e) {
+      e.preventDefault();
+      grecaptcha.ready(function() {
+        grecaptcha.execute('SITE KEY RECAPTCHA', {action: 'submit'}).then(function(token) {
+            // Add your logic to submit to your backend server here.
+            var response = document.getElementById('token_generate');
+            response.value = token;
+        });
+      });
+    }
+</script>
