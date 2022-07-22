@@ -1,0 +1,275 @@
+/*******************************************************
+TITLE: Fluid Two-Column Layout (Basic) V1.0 (Beta)
+DATE: 20060418
+AUTHOR: The CSS Tinderbox - http://www.csstinderbox.com
+*******************************************************/
+
+body {
+    margin:0;
+    padding:0;
+    background-color:#ffffff;
+    font-family:Arial, Helvetica, sans-serif;   
+    }    
+
+    a{text-decoration:none; color:#000000; list-style: none; cursor: pointer; opacity: 0.8;}
+    a:hover{opacity: 1;}
+    
+blockquote {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;                    
+    height: auto;
+    width: 100vw;
+    padding-top: 40px;  
+    margin:1em;
+    padding:.5em;
+    font-size:.9em;
+    background-color:#F3F2ED;
+    border-top:1px solid #999999;
+    border-bottom:1px solid #999999;
+    }
+    
+blockquote p {
+    margin:.2em;
+}
+
+.footer-content {    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    font-size: 15px;    
+}
+
+.footer-content p{
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 14px;
+    font-size: 14px;    
+}
+    
+#header {
+    margin:2em 2em 0 2em;
+    padding:1em 1.5em;
+    height:5em;
+    background-color:#F3F2ED;
+    border:1px solid #eeeeee;
+    }
+    
+#header h1 { 
+    margin:0; 
+    padding:0;
+    font-size:1.2em;
+    }
+    
+#header h3 { 
+    margin:0; 
+    padding:0;
+    font-size:1em;
+    }
+    
+#leftColumn {
+    position:absolute;
+    left:2.25em;
+    top:10.3em;
+    width:14em;
+    margin:0;
+    padding:1em 1em 2em .5em;
+    background:#CCC8B3;
+    border:1px solid #eeeeee;
+    font-size:1em;
+    line-height: 150%;      
+    }
+        
+#leftColumn h2 {                
+    font-size:1.1em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#centerColumn {
+    right:4.25em;
+    margin-top:.2em;    
+    margin-right:22.25em;                
+    margin-left:21.50em;    
+    padding:1em .5em 2em .5em;
+    background:#FFFFFF;
+    font-size:1em;
+    }
+
+#link_exclusivo {
+    display: none;
+}
+
+#linkexclusivo_leftside {
+    display: none;
+}
+
+@media only screen and (max-device-width: 1100px) {
+    .footer-content {
+        display: none;
+    }
+}
+        
+@media only screen and (max-device-width: 1000px) {
+    .footer-content {
+        display: none;
+          
+    }
+    .footer-content p {
+        display: none    
+    }  
+    #leftColumn {
+        display: none;
+        font-size: 3.1em;
+    }
+    #header {
+        font-size: 1.9em;
+        margin:0;      
+    }
+    #centerColumn {      
+        display:flex;
+        left:.25em;
+        top:10.3em;
+        width:14em;
+        margin:2em 2em 0 2em;
+        font-size: 2.1em;         
+        }        
+    #link_exclusivo {
+        display: flex;
+        font-size: 1em;
+    }
+    #linkexclusivo_leftside {
+    display: flex;
+    }
+}
+
+@media only screen and (max-device-width: 700px) {
+    .footer-content {
+        font-size: 1em;    
+    }
+    .footer-content p {
+        font-size: 1em;      
+    }  
+    #leftColumn {
+        display: none;
+        font-size: 3.1em;
+    }
+    #header {
+        font-size: 2.1em;
+        margin:0;      
+    }
+    #centerColumn {      
+        display:flex;
+        left:.25em;
+        top:10.3em;
+        width:14em;
+        margin:2em 2em 0 2em;
+        font-size: 2em;         
+        }        
+    #link_exclusivo {
+        display: flex;
+        font-size: 1.1em;
+    }
+    #linkexclusivo_leftside {
+        display: flex;
+    }       
+}
+
+@media only screen and (max-device-width: 500px) {
+    .footer-content {
+        font-size: .9em;    
+    }
+    .footer-content p {
+        font-size: .8em;      
+    }  
+    #leftColumn {
+        display: none;
+        font-size: 3.1em;
+    }
+    #header {
+        font-size: 2.7em;
+        margin:0;      
+    }
+    #centerColumn {      
+        display:flex;
+        left:.25em;
+        top:10.3em;
+        width:14em;
+        margin:2em 2em 0 2em;
+        font-size: 2.8em;         
+        }        
+    #link_exclusivo {
+        display: flex;
+        font-size: 1em;
+    }
+    #linkexclusivo_leftside {
+        display: flex;
+    }        
+}
+
+@media only screen and (max-device-width: 400px) {
+    .footer-content {
+        font-size: .8em;    
+    }
+    .footer-content p {
+        font-size: 1em;      
+    }  
+    #leftColumn {
+        display: none;
+        font-size: 3.1em;
+    }
+    #header {
+        font-size: 2.8em;
+        margin: 0;      
+    }
+    #centerColumn {      
+        display:flex;
+        left:.25em;
+        top:10.3em;
+        width:14em;
+        margin:2em 2em 0 2em;
+        font-size: 2.9em;         
+    }        
+    #link_exclusivo {
+        display: flex;
+        font-size: 1em;
+    }
+    #linkexclusivo_leftside {
+        display: flex;
+    }
+}
+
+
+@media only screen and (max-device-width: 300px) {
+    .footer-content {
+        font-size: 1em;    
+    }
+    .footer-content p {
+        font-size: 1em;      
+    }  
+    #leftColumn {
+        display: none;        
+    }
+    #header {
+        margin:0;
+        font-size: 2.7em;      
+    }
+    #centerColumn {      
+        display:flex;
+        left:.25em;
+        top:10.3em;
+        width:14em;
+        margin:2em 2em 0 2em;
+        font-size: 2.7em;         
+        }        
+    #centerColumn a {
+        font-size: 1.1em;
+    }
+    #link_exclusivo {
+        display: flex;
+        font-size: 1.1em;
+    }
+   
+}
