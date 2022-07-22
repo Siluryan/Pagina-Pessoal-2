@@ -1,5 +1,5 @@
 const firebaseConfig = {
-    apiKey: "AIzaSyAy9HqfdfB4GI4g3y3FpEMl4BVR5vwGSmk",
+    apiKey: "API_KEY",
     authDomain: "guilhermediasti.firebaseapp.com",
     databaseURL: "https://guilhermediasti-default-rtdb.firebaseio.com",
     projectId: "guilhermediasti",
