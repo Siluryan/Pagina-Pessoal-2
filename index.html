@@ -48,8 +48,7 @@
 
 <?php
 if(isset($_POST['submit'])){
-    $url = https://www.google.com/recaptcha/api/siteverify;
-    $secret = '6LeElb4gAAAAAIKn9zQYhiI4T8ejcMFQ4E_rdUeF';
+    $url = https://www.google.com/recaptcha/api/siteverify;   
     $response = $_POST['token_generate'];
     $remoteip = $_SERVER['REMOTE_ADDR'];
     $request = file_get_contents($url.'?secret='.$secret.'&response='.$response);
