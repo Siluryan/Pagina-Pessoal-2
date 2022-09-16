@@ -43,12 +43,13 @@
     
     <!-- script src -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.20.0-202088235442/firebase.js"></script>
-	<script src="https://www.google.com/recaptcha/api.js?render=SITE_KEY"></script>   
+	<script src="https://www.google.com/recaptcha/api.js?render=6LeElb4gAAAAAIOF0D6XySQuSvKyxH6r4ISE7blA"></script>   
 </head>
 
 <?php
 if(isset($_POST['submit'])){
-    $url = https://www.google.com/recaptcha/api/siteverify;   
+    $url = https://www.google.com/recaptcha/api/siteverify;
+    $secret = '6LeElb4gAAAAAIKn9zQYhiI4T8ejcMFQ4E_rdUeF';
     $response = $_POST['token_generate'];
     $remoteip = $_SERVER['REMOTE_ADDR'];
     $request = file_get_contents($url.'?secret='.$secret.'&response='.$response);
@@ -97,26 +98,15 @@ if(isset($_POST['submit'])){
         <div id="header-carousel" class="carousel slide carousel-fade" data-ride="carousel">  
             <div class="container">
                 <div class="carousel-inner">
-                    <div class="carousel-item">
+                    <div class="carousel-item active">
                         <div class="carousel-caption d-none d-md-block">
-                            <h1 class="carousel-title"><br> Soluções em Nuvem</h1>
-                            
-                        </div>
-                    </div>
-                    <div class="carousel-item active carousel-item-left">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h1 class="carousel-title"><br>Segurança da Informação</h1>
-                            
-                          </div>
-                    </div>
-                    <div class="carousel-item carousel-item-next carousel-item-left">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h1 class="carousel-title"><br> Python e DevOps</h1>
+                            <h1 class="carousel-title"><br>Suporte em TI</h1>
                         </div>
                     </div>
                 </div>
             </div>        
         </div>
+       
 
        
         <div class="infos container mb-4 mb-md-2">
@@ -391,7 +381,7 @@ escrevi ao longo da minha vida. Através deles você vai conhecer um pouco
     function onClick(e) {
       e.preventDefault();
       grecaptcha.ready(function() {
-        grecaptcha.execute('SITE_KEY?OU_SECRET?MAISPROVAVELSITE', {action: 'submit'}).then(function(token) {
+        grecaptcha.execute('6LeElb4gAAAAAIOF0D6XySQuSvKyxH6r4ISE7blA', {action: 'submit'}).then(function(token) {
             // Add your logic to submit to your backend server here.
             var response = document.getElementById('token_generate');
             response.value = token;
